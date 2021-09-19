@@ -1,0 +1,86 @@
+#menu {
+    list-style: none;
+    padding: 8px 0px;
+    background-image: linear-gradient(to bottom, red, white);
+    text-align: center;
+}
+
+#menu ul li {
+    display: inline;
+}
+
+#menu ul li a {
+    display: inline;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
+
+#menu ul li a:hover {
+    background-color: red;
+    color: #fff;
+    transition: background-color 1s;
+}
+
+
+/*sub menu*/
+
+ul li ul {
+    margin: 100px 100px 10px;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 18px;
+    left: 0;
+    display: none;
+    padding: 10px;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+}
+
+.botao01 {
+    background-color: #fff;
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.botao01:hover {
+    background-color: red;
+    color: #fff;
+    transition: background-color 1s;
+    text-decoration: none;
+}
+
+.botao {
+    margin-bottom: 30px;
+    margin-left: 700px;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: red;
+    color: #fff;
+    transition: background-color 1s;
+    text-decoration: none;
+}
+
+.rodape {
+    background-image: linear-gradient(to top, red, white);
+    text-decoration: none;
+    margin: 20px;
+}
